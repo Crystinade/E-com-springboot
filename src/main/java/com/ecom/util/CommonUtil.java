@@ -50,7 +50,7 @@ public class CommonUtil {
 		return siteUrl.replace(request.getServletPath(), "");
 	}
 	
-	String msg=null;;
+	String msg=null;
 	
 	public Boolean sendMailForProductOrder(ProductOrder order,String status) throws Exception
 	{
