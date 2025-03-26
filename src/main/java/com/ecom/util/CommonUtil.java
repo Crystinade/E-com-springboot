@@ -30,7 +30,7 @@ public class CommonUtil {
 		MimeMessage message = mailSender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message);
 
-		helper.setFrom("daspabitra55@gmail.com", "Shooping Cart");
+		helper.setFrom("daspabitra55@gmail.com", "Shopping Cart");
 		helper.setTo(reciepentEmail);
 
 		String content = "<p>Hello,</p>" + "<p>You have requested to reset your password.</p>"
@@ -86,8 +86,7 @@ public class CommonUtil {
 	
 	public UserDtls getLoggedInUserDetails(Principal p) {
 		String email = p.getName();
-		UserDtls userDtls = userService.getUserByEmail(email);
-		return userDtls;
+        return userService.getUserByEmail(email);
 	}
 	
 
